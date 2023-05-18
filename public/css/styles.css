@@ -1,0 +1,7 @@
+body {
+  background-color: rgb(255, 204, 128);
+}
+
+.table {
+  table-layout: fixed;
+}

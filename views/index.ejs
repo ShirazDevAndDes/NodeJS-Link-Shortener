@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("./layouts/header") %> <%- include("./editModal") %>
+  <body>
+    <div class="container">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-12 col-md-10 col-lg-8">
+          <div class="card mt-5">
+            <div class="card-body d-flex">
+              <input
+                type="text"
+                class="form-control border-0 shadow-none"
+                name="url"
+                id="url"
+                placeholder="Enter URL"
+              />
+              <div class="vr"></div>
+              <button class="btn" id="submitURL">Submit</button>
+            </div>
+          </div>
+          <%- include("./linksTable", {linkData: "user"}); %>
+        </div>
+      </div>
+    </div>
+    <%- include("./layouts/footer") %>
+  </body>
+</html>
